@@ -12,7 +12,7 @@ const Comments = ({ id, isModalOpen, setModalOpen }) => {
     };
 
     getComment();
-  }, []);
+  }, [id]);
 
   return (
     <>

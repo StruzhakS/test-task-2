@@ -1,5 +1,3 @@
-import { getElementError } from '@testing-library/react';
-import BasicCarousel from './Carousel/Carousel';
 import AdvancedCarousel from './Carousel/CarouselControls';
 import { useState } from 'react';
 

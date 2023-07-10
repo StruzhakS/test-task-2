@@ -1,5 +1,5 @@
 import Comments from 'components/Comments/Comments';
-import { getAllComentsApi, getAllPostsApi } from 'postsApi';
+import { getAllPostsApi } from 'postsApi';
 import React, { useEffect, useState } from 'react';
 import { useSnapCarousel } from 'react-snap-carousel';
 
