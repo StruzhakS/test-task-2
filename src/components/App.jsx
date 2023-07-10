@@ -1,16 +1,16 @@
+import { getElementError } from '@testing-library/react';
+import BasicCarousel from './Carousel/Carousel';
+import AdvancedCarousel from './Carousel/CarouselControls';
+import { useState } from 'react';
+
 export const App = () => {
+  const [isModalOpen, setModalOpen] = useState(false);
+
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
+    <div>
+      react exaple
+      <AdvancedCarousel isModalOpen={isModalOpen} setModalOpen={setModalOpen} />
+      {isModalOpen && <div>ModalWindow</div>}
     </div>
   );
 };
